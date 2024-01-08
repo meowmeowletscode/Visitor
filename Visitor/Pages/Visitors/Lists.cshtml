@@ -1,0 +1,48 @@
+﻿@page
+@model ListsModel
+@{
+}
+
+<h1>Visitor Lists</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Checkin Id</th>
+            <th>Name</th>
+            <th>IC No</th>
+            <th>Phone No</th>
+            <th>Company</th>
+            <th>Num of Person</th>
+            <th>Purpose</th>
+            <th>Time In</th>
+            <th>Time Out</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @if (Model.listVisitors != null && Model.listVisitors.Any())
+        {
+            @foreach (var item in Model.listVisitors)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.CheckinId</td>
+                    <td>@item.Name</td>
+                    <td>@item.ICNo</td>
+                    <td>@item.PhoneNo</td>
+                    <td>@item.Company</td>
+                    <td>@item.NumOfPerson</td>
+                    <td>@item.Purpose</td>
+                    <td>@item.TimeIn</td>
+                    <td>@item.TimeOut</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <p>No visitors record found.</p>
+        }       
+    </tbody>
+</table>

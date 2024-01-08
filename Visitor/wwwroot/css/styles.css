@@ -1,0 +1,51 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+h1 {
+    color: maroon;
+}
+
+h2 {
+    font-family: cursive;
+    color: darkblue;
+}
+
+body {
+    background-image: url('/images/resident.jpg'); 
+    background-size: cover; 
+}
+
+.row label {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.row input {
+    /* Add any specific styling for the input field */
+}
+
+.row .cancel-btn {
+    background-color: red; 
+    color: white; 
+}
+
+.row .cancel-btn:hover {
+    background-color: darkred; 
+}
